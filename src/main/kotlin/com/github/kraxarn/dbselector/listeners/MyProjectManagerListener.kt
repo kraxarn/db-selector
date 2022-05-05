@@ -6,8 +6,7 @@ import com.intellij.openapi.project.ProjectManagerListener
 import com.github.kraxarn.dbselector.services.MyProjectService
 
 internal class MyProjectManagerListener : ProjectManagerListener {
-
-    override fun projectOpened(project: Project) {
-        project.service<MyProjectService>()
-    }
+	override fun projectOpened(project: Project) {
+		project.service<MyProjectService>()
+	}
 }
