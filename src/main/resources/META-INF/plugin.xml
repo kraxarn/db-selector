@@ -7,12 +7,9 @@
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.github.kraxarn.dbselector.services.MyApplicationService"/>
-        <projectService serviceImplementation="com.github.kraxarn.dbselector.services.MyProjectService"/>
+        <toolWindow factoryClass="com.github.kraxarn.dbselector.MainWindowFactory"
+                    icon="AllIcons.Nodes.DataSchema"
+                    id="DB Selector"
+                    anchor="right"/>
     </extensions>
-
-    <applicationListeners>
-        <listener class="com.github.kraxarn.dbselector.listeners.MyProjectManagerListener"
-                  topic="com.intellij.openapi.project.ProjectManagerListener"/>
-    </applicationListeners>
 </idea-plugin>
