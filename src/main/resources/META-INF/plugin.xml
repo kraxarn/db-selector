@@ -11,5 +11,7 @@
                     icon="AllIcons.Nodes.DataSchema"
                     id="DB Selector"
                     anchor="right"/>
+
+        <notificationGroup displayType="BALLOON" id="Notifications"/>
     </extensions>
 </idea-plugin>
