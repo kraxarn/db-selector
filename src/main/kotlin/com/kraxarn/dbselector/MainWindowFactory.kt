@@ -1,4 +1,4 @@
-package com.github.kraxarn.dbselector
+package com.kraxarn.dbselector
 
 import com.intellij.openapi.project.Project
 import com.intellij.openapi.wm.ToolWindow
@@ -7,9 +7,8 @@ import com.intellij.ui.content.ContentFactory
 
 class MainWindowFactory : ToolWindowFactory {
 	override fun createToolWindowContent(project: Project, toolWindow: ToolWindow) {
-		val window = MainWindow(toolWindow)
 		val contentFactory = ContentFactory.SERVICE.getInstance()
-		val content = contentFactory.createContent(window.getContent(), "", false)
+		val content = contentFactory.createContent(mainPanel(), "", false)
 		toolWindow.contentManager.addContent(content)
 	}
 }

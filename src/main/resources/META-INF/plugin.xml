@@ -1,13 +1,13 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>com.github.kraxarn.dbselector</id>
-    <name>db-selector</name>
-    <vendor>kraxarn</vendor>
+    <id>com.kraxarn.db-selector</id>
+    <name>DB Selector</name>
+    <description>select database</description>
 
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.kraxarn.dbselector.MainWindowFactory"
+        <toolWindow factoryClass="com.kraxarn.dbselector.MainWindowFactory"
                     icon="AllIcons.Nodes.DataSchema"
                     id="DB Selector"
                     anchor="right"/>
