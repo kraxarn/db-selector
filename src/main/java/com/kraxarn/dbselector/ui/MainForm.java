@@ -14,11 +14,13 @@ public class MainForm
 	private JPanel panelPasswords;
 	private JTextField textFieldPasswordUsername;
 	private JCheckBox checkBoxPasswordsAllUsers;
-	private JPasswordField passwordField1;
+	private JPasswordField passwordFieldPasswordsPassword;
 	private JButton buttonPasswordsSetPassword;
 	private JLabel labelDatabasesNoConfigs;
 	private JLabel labelScriptsNoScripts;
-	private JButton buttonAboutOpenSource;
-	private JList list1;
-	private JLabel labelAboutSecret;
+	protected JButton buttonAboutOpenSource;
+	protected JLabel labelAboutSecret;
+	protected JComboBox comboBoxServer;
+	private JPanel panelAbout;
+	private JCheckBox checkBoxPasswordsClearPassword;
 }
