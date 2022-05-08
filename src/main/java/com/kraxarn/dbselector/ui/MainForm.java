@@ -19,4 +19,6 @@ public class MainForm
 	private JLabel labelDatabasesNoConfigs;
 	private JLabel labelScriptsNoScripts;
 	private JButton buttonAboutOpenSource;
+	private JList list1;
+	private JLabel labelAboutSecret;
 }

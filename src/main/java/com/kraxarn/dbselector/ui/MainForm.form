@@ -13,15 +13,24 @@
       <grid id="94d74" binding="panelSettings" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
-          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="true"/>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties/>
         <border type="empty" title-resource-bundle="i18n/text" title-key="panelSettingsTitle"/>
-        <children/>
+        <children>
+          <component id="be707" class="javax.swing.JList" binding="list1" default-binding="true">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="50"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+        </children>
       </grid>
       <tabbedpane id="d6ef2" binding="tabbedPaneMain">
         <constraints>
-          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
             <preferred-size width="200" height="200"/>
           </grid>
         </constraints>
@@ -165,7 +174,7 @@
               </component>
             </children>
           </grid>
-          <grid id="6e844" layout-manager="GridLayoutManager" row-count="6" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="8">
+          <grid id="6e844" layout-manager="GridLayoutManager" row-count="7" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="8">
             <margin top="32" left="16" bottom="16" right="16"/>
             <constraints>
               <tabbedpane title-resource-bundle="i18n/text" title-key="tabAboutTitle"/>
@@ -219,7 +228,7 @@
                       <contentAreaFilled value="false"/>
                       <label resource-bundle="i18n/text" key="tabAboutSourceCode"/>
                       <margin top="0" left="0" bottom="0" right="0"/>
-                      <text value="I'm Open Source!"/>
+                      <text value="Source Code"/>
                     </properties>
                   </component>
                 </children>
@@ -229,6 +238,17 @@
                   <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
                 </constraints>
               </vspacer>
+              <component id="ea26f" class="javax.swing.JLabel" binding="labelAboutSecret">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="2" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="2"/>
+                  <opaque value="false"/>
+                  <text resource-bundle="i18n/text" key="tabAboutSecrets"/>
+                  <visible value="true"/>
+                </properties>
+              </component>
             </children>
           </grid>
         </children>
