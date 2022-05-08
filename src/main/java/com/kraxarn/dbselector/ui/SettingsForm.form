@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.kraxarn.dbselector.ui.SettingsForm">
+  <grid id="c4c09" binding="panelMain" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="c1973" class="javax.swing.JLabel">
+        <constraints/>
+        <properties>
+          <text resource-bundle="i18n/text" key="settingsLanguage"/>
+        </properties>
+      </component>
+      <component id="1bb71" class="javax.swing.JComboBox" binding="comboBoxLanguage">
+        <constraints/>
+        <properties/>
+      </component>
+    </children>
+  </grid>
+</form>
