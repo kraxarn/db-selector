@@ -4,6 +4,10 @@ plugins {
 	id("org.jetbrains.intellij") version "1.4.0"
 }
 
+dependencies {
+	implementation("org.jetbrains.kotlin:kotlin-reflect:${kotlin.coreLibrariesVersion}")
+}
+
 group = "com.kraxarn"
 version = "2022.0.1"
 
