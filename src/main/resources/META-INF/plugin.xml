@@ -13,5 +13,12 @@
                     anchor="right"/>
 
         <notificationGroup displayType="BALLOON" id="Notifications"/>
+
+        <projectConfigurable
+                parentId="editor"
+                instance="com.kraxarn.dbselector.AppConfiguration"
+                id="databaseName"
+                displayName="Database Selector"
+                nonDefaultProject="true"/>
     </extensions>
 </idea-plugin>
