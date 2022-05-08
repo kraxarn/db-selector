@@ -33,12 +33,8 @@ jobs:
           PROPERTIES="$(./gradlew properties --console=plain -q)"
           VERSION="$(echo "$PROPERTIES" | grep "^version:" | cut -f2- -d ' ')"
           NAME="$(echo "$PROPERTIES" | grep "^name:" | cut -f2- -d ' ')"
-
           echo "::set-output name=version::$VERSION"
           echo "::set-output name=name::$NAME"
-          echo "::set-output name=pluginVerifierHomeDir::~/.pluginVerifier"
-
-          ./gradlew listProductsReleases # prepare list of IDEs for Plugin Verifier
 
       - name: Run Tests
         run: ./gradlew test
@@ -57,7 +53,6 @@ jobs:
           cd ${{ github.workspace }}/build/distributions
           FILENAME=`ls *.zip`
           unzip "$FILENAME" -d content
-
           echo "::set-output name=filename::${FILENAME:0:-4}"
 
       - name: Upload artifact
