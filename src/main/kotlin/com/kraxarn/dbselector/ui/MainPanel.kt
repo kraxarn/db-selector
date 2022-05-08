@@ -1,6 +1,6 @@
 @file:Suppress("UnstableApiUsage")
 
-package com.kraxarn.dbselector
+package com.kraxarn.dbselector.ui
 
 import com.intellij.icons.AllIcons
 import com.intellij.openapi.actionSystem.AnActionEvent
@@ -11,6 +11,7 @@ import com.intellij.ui.dsl.builder.RowLayout
 import com.intellij.ui.dsl.builder.bindItem
 import com.intellij.ui.dsl.builder.panel
 import com.jetbrains.rd.ui.bedsl.dsl.tabbedControl
+import com.kraxarn.dbselector.model.MainModel
 
 // Kotlin UI DSL v2 is "experimental" in 2021.3
 @Suppress("Experimental")
@@ -51,7 +52,7 @@ fun mainPanel(project: Project): DialogPanel
 	}
 }
 
-internal fun getModel(): Model
+internal fun getModel(): MainModel
 {
-	return Model(arrayOf("localhost"), "localhost")
+	return MainModel(arrayOf("localhost"), "localhost")
 }

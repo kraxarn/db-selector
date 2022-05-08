@@ -1,4 +1,4 @@
-package com.kraxarn.dbselector
+package com.kraxarn.dbselector.extensions
 
 import com.intellij.notification.NotificationGroupManager
 import com.intellij.notification.NotificationType
