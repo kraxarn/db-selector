@@ -18,4 +18,5 @@ public class MainForm
 	private JButton buttonPasswordsSetPassword;
 	private JLabel labelDatabasesNoConfigs;
 	private JLabel labelScriptsNoScripts;
+	private JButton buttonAboutOpenSource;
 }
