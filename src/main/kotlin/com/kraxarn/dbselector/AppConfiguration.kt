@@ -4,19 +4,13 @@ import com.intellij.openapi.options.Configurable
 import javax.swing.JComponent
 import javax.swing.JPanel
 
-class AppConfiguration : Configurable {
-	override fun createComponent(): JComponent {
-		return JPanel()
-	}
+class AppConfiguration : Configurable
+{
+	override fun createComponent(): JComponent = JPanel()
 
-	override fun isModified(): Boolean {
-		return false
-	}
+	override fun isModified(): Boolean = false
 
-	override fun apply() {
-	}
+	override fun apply() = Unit
 
-	override fun getDisplayName(): String {
-		return "Database Selector"
-	}
+	override fun getDisplayName(): String = "Database Selector"
 }
