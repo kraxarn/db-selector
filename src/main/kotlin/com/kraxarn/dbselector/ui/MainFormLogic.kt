@@ -3,25 +3,35 @@ package com.kraxarn.dbselector.ui
 import com.intellij.openapi.project.Project
 import com.kraxarn.dbselector.extensions.notifyError
 import java.awt.Desktop
-import java.awt.event.ActionEvent
-import java.awt.event.ActionListener
 import java.net.URI
-import javax.swing.AbstractAction
 import javax.swing.JPanel
 import kotlin.random.Random
 
-class MainFormLogic(val project: Project) : MainForm()
+class MainFormLogic(private val project: Project) : MainForm()
 {
 	init
 	{
-		// Server
+		//region Server
+
 		comboBoxServer.addItem("localhost")
+
+		//endregion
 
 		// Databases
 
 		// Scripts
 
-		// Passwords
+		//region Passwords
+
+		checkBoxPasswordsAllUsers.addActionListener {
+			textFieldPasswordUsername.isEnabled = !checkBoxPasswordsAllUsers.isSelected
+		}
+
+		checkBoxPasswordsClearPassword.addActionListener {
+			passwordFieldPasswordsPassword.isEnabled = !checkBoxPasswordsClearPassword.isSelected
+		}
+
+		//endregion
 
 		//region About
 

@@ -12,9 +12,9 @@ public class MainForm
 	private JButton buttonUpdateConnections;
 	private JPanel panelScripts;
 	private JPanel panelPasswords;
-	private JTextField textFieldPasswordUsername;
-	private JCheckBox checkBoxPasswordsAllUsers;
-	private JPasswordField passwordFieldPasswordsPassword;
+	protected JTextField textFieldPasswordUsername;
+	protected JCheckBox checkBoxPasswordsAllUsers;
+	protected JPasswordField passwordFieldPasswordsPassword;
 	private JButton buttonPasswordsSetPassword;
 	private JLabel labelDatabasesNoConfigs;
 	private JLabel labelScriptsNoScripts;
@@ -22,5 +22,5 @@ public class MainForm
 	protected JLabel labelAboutSecret;
 	protected JComboBox comboBoxServer;
 	private JPanel panelAbout;
-	private JCheckBox checkBoxPasswordsClearPassword;
+	protected JCheckBox checkBoxPasswordsClearPassword;
 }
