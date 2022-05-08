@@ -46,6 +46,9 @@ jobs:
           name: tests-result
           path: ${{ github.workspace }}/build/reports/tests
 
+      - name: Run Build plugin tasks
+        run: ./gradlew buildPlugin
+
       - name: Prepare Plugin Artifact
         id: artifact
         shell: bash
