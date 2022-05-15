@@ -47,6 +47,12 @@ class MainFormLogic(private val project: Project) : MainForm()
 			}
 		}
 
+		val version = javaClass.`package`.implementationVersion
+		if (version != null)
+		{
+			labelAppName.text += " $version"
+		}
+
 		labelAboutSecret.isVisible = Random.Default.nextInt() < Int.MAX_VALUE / 8
 
 		//endregion

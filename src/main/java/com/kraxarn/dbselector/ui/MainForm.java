@@ -23,4 +23,5 @@ public class MainForm
 	protected JComboBox comboBoxServer;
 	private JPanel panelAbout;
 	protected JCheckBox checkBoxPasswordsClearPassword;
+	protected JLabel labelAppName;
 }
