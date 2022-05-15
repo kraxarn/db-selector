@@ -10,7 +10,7 @@
       <component id="c1973" class="javax.swing.JLabel">
         <constraints/>
         <properties>
-          <text resource-bundle="i18n/text" key="settingsLanguage"/>
+          <text resource-bundle="i18n/settings" key="language"/>
         </properties>
       </component>
       <component id="1bb71" class="javax.swing.JComboBox" binding="comboBoxLanguage">
