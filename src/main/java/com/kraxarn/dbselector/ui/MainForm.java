@@ -8,7 +8,7 @@ public class MainForm
 	private JPanel panelSettings;
 	private JPanel panelServerList;
 	protected JTabbedPane tabbedPaneMain;
-	private JList listServers;
+	protected JList listServers;
 	private JButton buttonUpdateConnections;
 	protected JPanel panelScripts;
 	private JPanel panelPasswords;
