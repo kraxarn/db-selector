@@ -1,10 +1,12 @@
 package com.kraxarn.dbselector
 
+import com.microsoft.sqlserver.jdbc.SQLServerDriver
+import java.sql.Connection
 import java.sql.DriverManager
 
 class Database(private val hostname: String, private val databaseName: String?)
 {
-	private val connection = DriverManager.getConnection(connectionUrl)
+	private val connection: Connection
 
 	private val connectionUrl: String
 		get() = "jdbc:sqlserver://$hostname;databaseName=${databaseName ?: "master"}"
@@ -24,4 +26,11 @@ class Database(private val hostname: String, private val databaseName: String?)
 
 			return results
 		}
+
+	init
+	{
+		DriverManager.registerDriver(SQLServerDriver())
+		DriverManager.setLoginTimeout(3)
+		connection = DriverManager.getConnection(connectionUrl)
+	}
 }
