@@ -6,6 +6,7 @@ plugins {
 
 dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-reflect:${kotlin.coreLibrariesVersion}")
+	implementation("com.microsoft.sqlserver:mssql-jdbc:10.2.1.jre11")
 }
 
 group = "com.kraxarn"
